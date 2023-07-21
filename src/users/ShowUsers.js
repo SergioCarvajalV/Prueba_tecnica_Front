@@ -49,7 +49,7 @@ const CompShowUsers = () =>{
                     <td>{user.name}</td>
                     <td>{user.status}</td>
                     <td>
-                    <Link to={`/edit/${user.id}${user.name}`} className='btn btn-info'>Update user</Link>
+                    <Link to={`/edit/${user.id}`} className='btn btn-info'>Update user</Link>
                     <button className="btn btn-success" onClick={()=>changeStatus(user.id, user.status)}>Change status</button>
                     </td>
                 </tr>
